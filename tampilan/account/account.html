@@ -37,50 +37,47 @@
   <link href="sticky-footer.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
 
   <!-- Begin page content -->
-  <main class="flex-shrink-0">
-    <div class="container ">
-      <span data-feather="chevron-left" href="#"></span>
-      <h1 class="mt-3 text-center">My Account</h1>
-      <div class="row">
-        <div class="col-lg-4">
-          <center>
-          <svg class="bd-placeholder-img rounded-circle mt-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-          
-            <h4 class="mt-2 mb-0">Steve Jobs</h4>
-           <p>steve@uapps.id</p>
-          </center>
-        </div><!-- /.col-lg-4 -->
+  <div class="container-fluid">
 
-      </div><!-- /.row -->
-    </div>
-  </main>
+    <header class="d-flex p-3">
+        <button type="button" class="btn align-self-center me-4">
+          <i data-feather="chevron-left"></i>
+        </button>
+        <div class="pt-1 mx-auto">
+        <h2 class="text-center">My Account</h2>
+      </div>
+      </div>
+    </header>
 
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-      <span data-feather="home" href="#"></span>
-      <p href="">Home</p></br>
+    <div class="text-center mt-4">
+      <img src="https://www.011global.com/Account/Slices/user-anonymous.png" alt="" srcset="" class="img-fluid"
+        width="150px">
+      <h4 class="text-center mb-0">Steve Job</h4>
+      <p>steve@uapps.id</p>
     </div>
 
-    <div class="container">
-      <span data-feather="shopping-cart" href=""></span>
-      <p>Chart</p>
+  </div>
+
+  <footer class="footer" style="position: fixed; bottom:0;width:100%">
+
+    <div class="row">
+      <div class="col text-center align-self-center mb-0">
+        <span data-feather="home" href="#"></span>
+        <p href="">Home</p></br>
+      </div>
+      <div class="col text-center align-self-center mb-0">
+        <span data-feather="shopping-cart" href="#"></span>
+        <p href="">Cart</p></br>
+      </div>
+      <div class="col text-center align-self-center mb-0">
+        <span data-feather="user" href="#"></span>
+        <p href="">Account</p></br>
+      </div>
     </div>
 
-    <div class="container">
-      <span data-feather="user" href=""></span>
-      <p>Account</p>
-    </div>
-
-
-    
-    
 
   </footer>
 
