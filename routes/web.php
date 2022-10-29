@@ -12,13 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::middleware(["auth"])->as("admin.")->group(function () {
 
-Route::get('/', function () {
-    return view('welcome');
+    Route::get('/', function () {
+        return view('pages.home');
+    })->name("home");
+
+    Route::get("/account", function() {
+        return view("pages.account");
+    })->name("account");
+
+    Route::get("/list_user", function() {
+        return view("pages.user_list");
+    })->name("list_user");
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Auth::routes();
 
-require __DIR__.'/auth.php';
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
