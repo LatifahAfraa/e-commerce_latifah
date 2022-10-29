@@ -16,11 +16,8 @@
                                 User List
                             </a>
                         </li>
-                        <a href="#" onclick="$('#formLogout').submit()">
+                        <a href="{{ route('logout.get') }}">
                             <li class="nav-item">
-                                <form action="{{ route("logout") }}" method="post" id="formLogout">
-                                    @csrf
-                                </form>
                                 <div class="nav-link">
                                     <span data-feather="log-out"></span>
                                     Logout
