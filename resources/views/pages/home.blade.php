@@ -11,7 +11,7 @@
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ route('admin.list_user') }}">
+                            <a class="nav-link active" aria-current="page" href="{{ route('list_user') }}">
                                 <span data-feather="users"></span>
                                 User List
                             </a>

@@ -1,6 +1,6 @@
 <?php
-
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::middleware(["auth"])->as("admin.")->group(function () {
+// https:..../admin/home = prefix
+// {{ route... }} == as
+Route::middleware(["auth"])->group(function () {
 
     Route::get('/', function () {
         return view('pages.home');
@@ -23,9 +25,11 @@ Route::middleware(["auth"])->as("admin.")->group(function () {
         return view("pages.account");
     })->name("account");
 
-    Route::get("/list_user", function() {
-        return view("pages.user_list");
-    })->name("list_user");
+    // Route::get("/list_user", function() {
+    //     return view("pages.user_list");
+    // })->name("list_user");
+
+    Route::get('list_user',[ListController::class, 'index'])->name('list_user');
 });
 
 Auth::routes();
