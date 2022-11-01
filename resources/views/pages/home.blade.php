@@ -52,6 +52,34 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="carousel-item ">
+                            <img src="https://cottondna.com/vendor/designer/admin/assets/img/default-cover.png"
+                                class="img-fluid" alt="" height="50%">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                             <img src="https://cottondna.com/vendor/designer/admin/assets/img/default-cover.png"
+                                class="img-fluid" alt="" height="50%">
+                        <div class="container">
+                          <div class="carousel-caption">
+                          </div>
+                        </div>
+                      </div>
+
+                       <div class="carousel-item">
+                             <img src="https://cottondna.com/vendor/designer/admin/assets/img/default-cover.png"
+                                class="img-fluid" alt="" height="50%">
+                        <div class="container">
+                          <div class="carousel-caption text-end">
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
                         data-bs-slide="prev">
